@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogesh Krishna | Developer Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Background Canvas */
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: #0f172a;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #38bdf8;
+      margin-bottom: 20px;
+      object-fit: cover;   /* 🔥 ensures no stretching */
+      object-position: center; /* centers your face in the circle */
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4); /* makes it pop */
+    }
+
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 10px 0;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0f2fe;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #38bdf8;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #f1f5f9;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .project h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      margin-top: 60px;
+      border-top: 1px solid #38bdf8;
+    }
+
+    .social-links a {
+      margin: 0 15px;
+      color: #38bdf8;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #facc15;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="background"></canvas>
+
+  <header>
+    <img src="C:\Users\yoges\Downloads\portfolio-quickstart\assets\mypic.jpeg" alt="Yogesh Krishna">
+    <h1>Yogesh Krishna</h1>
+    <p>
+      Innovator at heart, engineer by mindset — I architect intelligent apps, design frictionless digital experiences, and push the boundaries of what's possible through tech. I don't just solve problems — I turn bold ideas into powerful, scalable solutions.
+    </p>
+  </header>
+
+  <section>
+    <h2>The Human Behind the Code</h2>
+    <p>
+      I’m not just a developer — I’m a creator who believes in merging logic with imagination.  
+      With expertise in Python, Flutter, React, Node.js, and system design, I transform complex challenges into elegant digital solutions.  
+      Beyond coding, I embrace football, fitness, and teamwork — building resilience, strategy, and leadership that flow back into my work.
+    </p>
+  </section>
+
+  <section>
+    <h2>A Glimpse of My Works</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>NeuroLink</h3>
+        <p>
+          An AI-powered ideation engine that transforms scattered thoughts into structured, actionable insights.  
+    With intelligent context analysis, curated resource suggestions, and guided next steps, NeuroLink becomes your "thinking partner for innovation".
+        </p>
+      </div>
+      <div class="project">
+        <h3>BillSplit Pro</h3>
+        <p>
+          A smart expense splitter for roommates and travelers.  
+          Real-time balance updates, settle-up algorithms, and intuitive UI ensure that "friendships stay stress-free, even when money is involved".
+        </p>
+      </div>
+      <div class="project">
+        <h3>BreathTrackPro</h3>
+        <p>
+          Contactless breathing monitor using Flutter + ML Kit.  
+          Converts any smartphone camera into a "personal health tracker" for breathing rates and apnea detection — no wearables needed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Life in Motion</h2>
+    <p>
+      Off the screen, I’m a strategist on the football field and a challenger in fitness.  
+      Sports sharpen my leadership, coding sharpens my logic, and together they fuel a relentless drive for excellence.  
+      I believe in building not just apps, but "momentum, collaboration, and impact".
+    </p>
+  </section>
+
+  <section>
+    <h2>Join My Journey</h2>
+    <p>
+      Let’s innovate, collaborate, and create meaningful digital experiences together.  
+      I’m open to internships, freelance projects, and opportunities where "passion meets purpose".
+    </p>
+    <div class="social-links">
+      <a href="https://github.com/YogiKris11" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/yogesh-krishna-k-b22699291/" target="_blank">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1S5T1HLbPkv7NAW-8ie5HFqKLqwDIKYxX/view?usp=sharing" target="_blank">Resume</a>
+      <a href="mailto:yogeshkrishna2018@gmail.com">Gmail</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Yogesh Krishna | Crafted with ❤️ and endless curiosity!!!
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    // Network Gradient Animation
+    const canvas = document.getElementById("background");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let particlesArray;
+    const colors = ["#38bdf8", "#facc15", "#a78bfa", "#f472b6"];
+
+    class Particle {
+      constructor(x, y, dx, dy, size, color) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.size = size;
+        this.color = color;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+      update() {
+        if (this.x + this.size > canvas.width || this.x - this.size < 0) this.dx = -this.dx;
+        if (this.y + this.size > canvas.height || this.y - this.size < 0) this.dy = -this.dy;
+        this.x += this.dx;
+        this.y += this.dy;
+        this.draw();
+      }
+    }
+
+    function init() {
+      particlesArray = [];
+      for (let i = 0; i < 100; i++) {
+        let size = Math.random() * 3 + 1;
+        let x = Math.random() * (canvas.width - size * 2);
+        let y = Math.random() * (canvas.height - size * 2);
+        let dx = (Math.random() - 0.5) * 1.5;
+        let dy = (Math.random() - 0.5) * 1.5;
+        let color = colors[Math.floor(Math.random() * colors.length)];
+        particlesArray.push(new Particle(x, y, dx, dy, size, color));
+      }
+    }
+
+    function connect() {
+      let opacityValue = 1;
+      for (let a = 0; a < particlesArray.length; a++) {
+        for (let b = a; b < particlesArray.length; b++) {
+          let distance = ((particlesArray[a].x - particlesArray[b].x) ** 2) + ((particlesArray[a].y - particlesArray[b].y) ** 2);
+          if (distance < (canvas.width/7) * (canvas.height/7)) {
+            opacityValue = 1 - (distance/20000);
+            ctx.strokeStyle = `rgba(56,189,248,${opacityValue})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+      }
+      connect();
+    }
+
+    init();
+    animate();
+  </script>
+</body>
+</html>
